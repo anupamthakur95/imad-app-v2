@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
-    background-color: lightgrey;
+    background-color: white;
+    padding:60px;
     margin-top: 75px;
 }
 

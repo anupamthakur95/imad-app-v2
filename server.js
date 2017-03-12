@@ -14,8 +14,8 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/ui/MYXJ_20161008204648_fast.png ', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'MYXJ_20161008204648_fast.png '));
+app.get('/ui/anu.png ', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'anu.png '));
 });
 
 

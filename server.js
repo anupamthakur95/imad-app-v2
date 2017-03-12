@@ -9,19 +9,13 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/batman2',function (req, res) {
-     res.sendFile(path.join(__dirname, 'ui', 'batman2.html'));
-});
-app.get('/anujjj',function (req, res) {
-     res.sendFile(path.join(__dirname, 'ui', 'anujjj.html'));
-});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+app.get('/ui/MYXJ_20161008204648_fast.png ', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'MYXJ_20161008204648_fast.png '));
 });
 
 

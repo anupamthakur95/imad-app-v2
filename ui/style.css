@@ -19,6 +19,8 @@ body {
     font-weight: bold;
 }
 
-.img-medium {
+.img {
+    margin-right: 275px;
     height: 200px;
+    
 }

@@ -13,8 +13,8 @@ button.onClick=function() {
         }
     };
 
-    var username=document.getElementById('username')'.value;
-    var username=document.getElementById('password')'.value;
+    var username=document.getElementById('username').value;
+    var password=document.getElementById('password').value;
     request.open('POST','http://anupamthakur95.imad.hasura-app.io/login', true);
     request.setRequestHeader('Content-Type','ápplication/json');
     request.send(JSON.stringify({username:username,password: password}));

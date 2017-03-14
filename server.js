@@ -1,7 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var Pool=require('pg').Pool;
+var pool=require('pg').Pool;
 var crypto=require('crypto');
 var bodyParser=require('body-parser');
 var config={
@@ -43,7 +43,7 @@ app.post('/create-user',function(req,res){
         
     } );
 });
-    var Pool=new Pool(config);
+    var pool=new Pool(config);
     app.get('/test-db',function(req,res){
         pool.query('SELECT * FROM test',function(err,result){
             if(err){
@@ -57,7 +57,7 @@ app.post('/create-user',function(req,res){
 app.post('/login',function (req,res){
     var username=req.body.username;
     var password=req.body.password;
-    Pool.query('SELECT * from "user" WHERE username=$1',[username],function(err,result)
+    pool.query('SELECT * from "user" WHERE username=$1',[username],function(err,result)
     {
         if(err){
             res.status(500).send(err.toString());

@@ -1,9 +1,6 @@
 body {
     font-family: sans-serif;
     background-color: white;
-
-    
-    
 }
 
 .center {
@@ -21,18 +18,9 @@ body {
 .img {
     margin-right: 275px;
     height: 200px;
+}
+.navbar
+{
+    border-color:red;
     
-}
-.navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 32px;
-    letter-spacing: 5px;
-}
-
-.navbar-nav li a:hover {
-    color: red;
 }

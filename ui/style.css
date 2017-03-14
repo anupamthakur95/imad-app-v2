@@ -34,5 +34,5 @@ body {
 }
 
 .navbar-nav li a:hover {
-    color: #1abc9d ;
+    color: red;
 }

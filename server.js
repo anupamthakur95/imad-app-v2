@@ -43,7 +43,7 @@ app.post('/create-user',function(req,res){
         
     } );
 });
-    var Pool=new pool(config);
+    var Pool=new Pool(config);
     app.get('/test-db',function(req,res){
         pool.query('SELECT * FROM test',function(err,result){
             if(err){

@@ -1,5 +1,5 @@
-var button=document.getElementById('login');
-button.onClick=function() {
+var button=document.getElementById('submit_btn');
+submit.onClick=function() {
     var request=new XMLHttpRequest();
     request.onreadystatechange=function() {
         if(request.readyState===XMLHttpRequest.Done){

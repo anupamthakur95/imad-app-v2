@@ -19,8 +19,7 @@ body {
     margin-right: 275px;
     height: 200px;
 }
-.navbar
-{
+.navbar-default {
     border-color:red;
     
 }

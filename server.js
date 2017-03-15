@@ -87,7 +87,9 @@ app.post('/login',function (req,res){
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
-
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'form.html'));
+});
 
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80

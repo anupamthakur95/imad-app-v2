@@ -19,9 +19,7 @@ app.use(bodyParser.json());
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
-app.get('/ui/form.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'form.html'));
-});
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });

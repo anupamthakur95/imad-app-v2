@@ -9,7 +9,7 @@ var config={
     database:'anupamthakur95',
     host:'db.imad.hasura.io',
     port:'5432',
-    password:'db-anupamthakur95-5331'
+    password: 'db-anupamthakur95-5331'
     
 };
 
@@ -63,8 +63,8 @@ app.post('/login',function (req,res){
             else{
                 var dbString=result.rows[0].password;
                 var salt=dbString.split('$')[2];
-                var hashedPassword=hash(password,salt);
-                if (hashedPassword===dbString){
+                var hashedPassword = hash(password,salt);
+                if (hashedPassword === dbString){
                     res.send('logged in');
                 }
                 else{

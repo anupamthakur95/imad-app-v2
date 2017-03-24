@@ -9,7 +9,7 @@ var config={
     database:'anupamthakur95',
     host:'db.imad.hasura.io',
     port:'5432',
-    password:process.env.DB_PASSWORD
+    password:db-anupamthakur95-5331
     
 };
 
